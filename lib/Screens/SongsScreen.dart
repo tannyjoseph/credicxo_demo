@@ -29,11 +29,11 @@ class _TrendingSongsState extends State<TrendingSongs> {
     bloc.fetchAllMusic();
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFFf05454),
         title: Center(
             child: Text(
           'Trending',
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.white),
         )),
       ),
       body: OfflineBuilder(
@@ -80,7 +80,7 @@ class _TrendingSongsState extends State<TrendingSongs> {
               shrinkWrap: true,
               itemCount: snapshot.data.results.length,
               itemBuilder: (BuildContext context, int index) {
-                return InkResponse(
+                return InkWell(
                   child: Card(
                     child: Wrap(
                       children: [

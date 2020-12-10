@@ -67,9 +67,9 @@ class DetailsState extends State<Details> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFFf05454),
         iconTheme: IconThemeData(color: Colors.black),
-        title: Text("Track Details", style: TextStyle(color: Colors.black)),
+        title: Text("Track Details", style: TextStyle(color: Colors.white)),
       ),
       body: OfflineBuilder(
         connectivityBuilder: (

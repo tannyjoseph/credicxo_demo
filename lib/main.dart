@@ -8,7 +8,6 @@ class MusicFinder extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: "Music And You",
-        theme: ThemeData(primarySwatch: Colors.lightBlue),
         home: TrendingSongs());
   }
 }
