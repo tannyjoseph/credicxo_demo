@@ -7,10 +7,10 @@ class MusicClient {
   Client client = new Client();
 
   Future<Trending> fetchMusicList() async {
-    print("entered");
+//    print("entered");
     final response = await client.get(
-        "https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=2d782bc7a52a41ba2fc1ef05b9cf40d7");
-    print(response.body.toString());
+        "https://api.musixmatch.com/ws/1.1/chart.tracks.get?apikey=4095cdcd9dc350757150716efb9c8a44");
+//    print(response.body.toString());
     if (response.statusCode == 200) {
       // If the call to the server was successful, parse the JSON
       return Trending.fromJson(json.decode(response.body));
@@ -22,7 +22,7 @@ class MusicClient {
 
   Future<Lyrics> fetchLyrics(int trackId) async {
     final response = await client.get(
-        "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=$trackId&apikey=2d782bc7a52a41ba2fc1ef05b9cf40d7");
+        "https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=$trackId&apikey=4095cdcd9dc350757150716efb9c8a44");
 
     if (response.statusCode == 200) {
       return Lyrics.fromJson(json.decode(response.body));

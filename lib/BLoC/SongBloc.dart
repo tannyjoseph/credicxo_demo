@@ -13,6 +13,7 @@ class SongBloc {
     if(_isDisposed) {
       return;
     }
+
     Trending itemModel = await _repository.fetchAllMusic();
     _musicFetcher.sink.add(itemModel);
   }

@@ -25,7 +25,7 @@ class SongDetailBloc {
   _itemTransformer() {
     return ScanStreamTransformer(
       (Future<Lyrics> trailer, int id, int index) {
-        print(index);
+//        print(index);
         trailer = _fetch.fetchLyrics(id);
         return trailer;
       },

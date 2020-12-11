@@ -2,7 +2,7 @@ class Trending {
   List<_Song> _songs = [];
 
   Trending.fromJson(Map<String, dynamic> parsedJson) {
-    print(parsedJson['message']['body']['track_list'].length);
+//    print(parsedJson['message']['body']['track_list'].length);
     List<_Song> temp = [];
     for (int i = 0;
         i < parsedJson['message']['body']['track_list'].length;

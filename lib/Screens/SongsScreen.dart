@@ -1,7 +1,7 @@
 import 'package:credicxodemo/BLoC/SongBloc.dart';
 import 'package:credicxodemo/BLoC/bloc_provider.dart';
 import 'package:credicxodemo/Data/trending.dart';
-import 'package:credicxodemo/Screens/details.dart';
+import 'package:credicxodemo/Screens/detailsScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_offline/flutter_offline.dart';

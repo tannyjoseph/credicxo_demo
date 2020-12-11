@@ -12,7 +12,6 @@ class SongDetailBlocProvider extends InheritedWidget {
   bool updateShouldNotify(_) {
     return true;
   }
-
   static SongDetailBloc of(BuildContext context) {
     return (context
             .dependOnInheritedWidgetOfExactType<SongDetailBlocProvider>())
